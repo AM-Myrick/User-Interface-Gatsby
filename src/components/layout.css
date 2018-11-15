@@ -943,50 +943,55 @@ footer .footer-content .footer-right div p {
   transition: 1s;
   width: 100%;
 }
-.serv-container .tabs .tabs-item .tabs-item-title {
+
+.serv-container .tabs-items {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.serv-container .tabs-items .tabs-item .tabs-item-title {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 10px;
 }
-.serv-container .tabs .tabs-item-selected {
+.serv-container .tabs-items .tabs-item-selected {
   display: block;
   animation-name: fade;
   animation-duration: 2s;
   opacity: 1;
 }
-.serv-container .tabs .tabs-item-selected .tabs-item-description {
+.serv-container .tabs-items .tabs-item-selected .tabs-item-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.serv-container .tabs .tabs-item-selected .tabs-item-description p {
+.serv-container .tabs-items .tabs-item-selected .tabs-item-description p {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .serv-container .tabs .tabs-item-selected .tabs-item-description p {
+  .serv-container .tabs-items .tabs-item-selected .tabs-item-description p {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-.serv-container .tabs .tabs-item-selected .tabs-item-description .desktop {
+.serv-container .tabs-items .tabs-item-selected .tabs-item-description .desktop {
   max-width: 100%;
   display: block;
   width: 45%;
   height: auto;
 }
 @media (max-width: 500px) {
-  .serv-container .tabs .tabs-item-selected .tabs-item-description .desktop {
+  .serv-container .tabs-items .tabs-item-selected .tabs-item-description .desktop {
     display: none;
   }
 }
-.serv-container .tabs .tabs-item-selected .tabs-item-description .mobile {
+.serv-container .tabs-items .tabs-item-selected .tabs-item-description .mobile {
   max-width: 100%;
   height: auto;
   display: none;
 }
 @media (max-width: 500px) {
-  .serv-container .tabs .tabs-item-selected .tabs-item-description .mobile {
+  .serv-container .tabs-items .tabs-item-selected .tabs-item-description .mobile {
     display: block;
     width: 100%;
     height: auto;

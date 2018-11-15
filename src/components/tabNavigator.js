@@ -1,4 +1,12 @@
 import React from 'react'
+import preConstructionImage from "../img/services/services-tab-pre-construction-img.png"
+import preConstructionMobile from "../img/services/services-tab-mobile-pre-construction-img.png"
+import constructionImage from "../img/services/services-tab-construction-img.png"
+import constructionMobile from "../img/services/services-tab-mobile-construction-img.png"
+import designBuildImage from "../img/services/services-tab-design-build-img.png"
+import designBuildMobile from "../img/services/services-tab-mobile-design-build-img.png"
+import sustainabilityImage from "../img/services/services-tab-sustainability-img.png"
+import sustainabilityMobile from "../img/services/services-tab-mobile-sustainability-img.png"
 
 export default class TabNavigator extends React.Component {
     constructor(props) {
@@ -47,8 +55,8 @@ export default class TabNavigator extends React.Component {
                                     of the art customer service.<br /><br />Phosfluorescently engage worldwide methodologies with web-enabled
                                     technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
                                     Completely pursue scalable customer service through sustainable potentialities.</p>
-                                <img src="./img/services/services-tab-pre-construction-img.png" alt="Pre-Construction" className="desktop" />
-                                <img src="./img/services/services-tab-mobile-pre-construction-img.png" alt="mobile Pre-Construction" className="mobile" />
+                                <img src={preConstructionImage} alt="Pre-Construction" className="desktop" />
+                                <img src={preConstructionMobile} alt="mobile Pre-Construction" className="mobile" />
                         </div>
                     </div>
                 </div>
@@ -72,8 +80,8 @@ export default class TabNavigator extends React.Component {
                                 of the art customer service.<br /><br />Phosfluorescently engage worldwide methodologies with web-enabled
                                 technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
                                 Completely pursue scalable customer service through sustainable potentialities.</p>
-                            <img src="./img/services/services-tab-construction-img.png" alt="Construction" className="desktop" />
-                            <img src="./img/services/services-tab-mobile-construction-img.png" alt="mobile Construction" className="mobile" />
+                            <img src={constructionImage} alt="Construction" className="desktop" />
+                            <img src={constructionMobile} alt="mobile Construction" className="mobile" />
                         </div>
                     </div>
                 </div>
@@ -97,8 +105,8 @@ export default class TabNavigator extends React.Component {
                                 of the art customer service.<br /><br />Phosfluorescently engage worldwide methodologies with web-enabled
                                 technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
                                 Completely pursue scalable customer service through sustainable potentialities.</p>
-                            <img src="./img/services/services-tab-design-build-img.png" alt="Design Build" className="desktop" />
-                            <img src="./img/services/services-tab-mobile-design-build-img.png" alt="mobile design build" className="mobile" />
+                            <img src={designBuildImage} alt="Design Build" className="desktop" />
+                            <img src={designBuildMobile} alt="mobile design build" className="mobile" />
                         </div>
                     </div>
                 </div>
@@ -122,8 +130,8 @@ export default class TabNavigator extends React.Component {
                                 of the art customer service.<br /><br />Phosfluorescently engage worldwide methodologies with web-enabled
                                 technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
                                 Completely pursue scalable customer service through sustainable potentialities.</p>
-                            <img src="./img/services/services-tab-sustainability-img.png" alt="Sustainability" className="desktop" />
-                            <img src="./img/services/services-tab-mobile-sustainability-img.png" alt="mobile sustainability" className="mobile" />
+                            <img src={sustainabilityImage} alt="Sustainability" className="desktop" />
+                            <img src={sustainabilityMobile} alt="mobile sustainability" className="mobile" />
                         </div>
                     </div>
                 </div>

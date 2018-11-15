@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'gatsby'
 import Navigation from "../components/nav"
 import jumbotron from "../img/home/buildings-edit.jpg"
 import mobileJumbotron from "../img/home/buildings.jpg"
@@ -42,7 +43,7 @@ class IndexPage extends Component {
             <h2>Smith & Jones Architects</h2>
             <p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer
               sed. Duo etiam laboramus dissentiet in, nec no errem </p>
-            <a href="#">Learn More</a>
+            <Link to="#">Learn More</Link>
           </div>
           <div className="top-right">
             <img src={sketch} alt="sketch close-up" className="desktop"/>
@@ -56,7 +57,7 @@ class IndexPage extends Component {
             <h2>Futuristic Designs</h2>
             <p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer
               sed. Duo etiam laboramus dissentiet in, nec no errem </p>
-            <a href="#">View Designs</a>
+            <Link to="#">View Designs</Link>
           </div>
           <div className="bottom-left">
             <img src={buildings} alt="long buildings" className="desktop"/>

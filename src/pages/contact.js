@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Navigation from "../components/nav";
 import contactJumbotron from "../img/contact/contact-jumbo1.jpg"
 import mobileContactJumbotron from "../img/contact/contact-jumbo.jpg"
@@ -6,16 +7,16 @@ import mobileContactJumbotron from "../img/contact/contact-jumbo.jpg"
 const ContactPage = () => (
   <div>
 	  <Navigation />
-    <div class="cu-jumbotron">
-      <img src={contactJumbotron} alt="contact jumbotron" class="desktop" />
-      <img src={mobileContactJumbotron} alt="mobile contact jumbotron" class="mobile" />
-      <div class="cu-img-text">
+    <div className="cu-jumbotron">
+      <img src={contactJumbotron} alt="contact jumbotron" className="desktop" />
+      <img src={mobileContactJumbotron} alt="mobile contact jumbotron" className="mobile" />
+      <div className="cu-img-text">
         <h1>Contact Us</h1>
       </div>
     </div>
 
-    <div class="cu-container">
-      <div class="left">
+    <div className="cu-container">
+      <div className="left">
         <h2>Get In Touch</h2>
     
         <p>Email Address</p>
@@ -23,13 +24,13 @@ const ContactPage = () => (
         <h6>We'll never share your email with anyone else.</h6>
     
         <p>How many buildings do you need planned?</p>
-        <input type="number" value="1" min="1" max="5" class="num" />
+        <input type="number" value="1" min="1" max="5" className="num" />
     
         <p>Provide a brief overview of your project needs:</p>
         <textarea>
         </textarea>
 
-        <div class="radio-opts">
+        <div className="radio-opts">
           <label><input type="radio" name="business-need" label="I am a small business" value="small-business" />
           I am a small business<br /></label>
           <label><input type="radio" name="business-need" label="I am a residential owner" value="residential" />
@@ -37,9 +38,9 @@ const ContactPage = () => (
           <label><input type="radio" name="business-need" label="I am a corporation" value="corp" />
           I am a corporation</label>
         </div>
-        <a>Submit</a>
+        <Link to="#">Submit</Link>
       </div>
-      <aside class="right">
+      <aside className="right">
         <h2>Where We Work</h2>
 
         <div>
@@ -75,8 +76,8 @@ const ContactPage = () => (
     </div>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-left">
+    <div className="footer-content">
+      <div className="footer-left">
         <h2>Interested in starting a project? </h2>
         <h2>Let’s talk:</h2>
 
@@ -85,7 +86,7 @@ const ContactPage = () => (
         <p>We'll never share your email with anyone else.</p>
       </div>
 
-      <div class="footer-right">
+      <div className="footer-right">
         <div>
           <h3>New York</h3>
           <p>
@@ -117,7 +118,7 @@ const ContactPage = () => (
         </div>
       </div>
     </div>
-    <div class="copyright">
+    <div className="copyright">
       <p>Copyright © 2018 Smith and Jones</p>
     </div>
   </footer>

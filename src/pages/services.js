@@ -7,30 +7,23 @@ import servicesJumbotron from "../img/services/services-jumbo1.jpg";
 export default class ServicesPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            selected: "1"
-        };
-      }
-
-      selectTab = (e) => {
-        e.preventDefault();
-        this.setState({ selected: [e.target.name]})
-      }
+        this.state = {}
+    }
 
       render() {
         return (
             <div>
                 <Navigation />
 
-                <div class="serv-jumbotron">
-                    <img src={servicesJumbotron} alt="services jumbotron" class="desktop" />
-                    <img src={mobileServicesJumbotron} alt="mobile services jumbotron" class="mobile" />
-                    <div class="serv-img-text">
+                <div className="serv-jumbotron">
+                    <img src={servicesJumbotron} alt="services jumbotron" className="desktop" />
+                    <img src={mobileServicesJumbotron} alt="mobile services jumbotron" className="mobile" />
+                    <div className="serv-img-text">
                         <h1>Services</h1>
                     </div>
                 </div>
 
-                <div class="serv-container">
+                <div className="serv-container">
                     <p>Services include: completely synergize resource taxing relationships via premier niche markets. Professionally
                         cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for
                         state of the art customer service.</p>
@@ -39,8 +32,8 @@ export default class ServicesPage extends React.Component {
                 <TabNavigator />
 
                 <footer>
-                    <div class="footer-content">
-                        <div class="footer-left">
+                    <div className="footer-content">
+                        <div className="footer-left">
                             <h2>Interested in starting a project? </h2>
                             <h2>Let’s talk:</h2>
 
@@ -49,7 +42,7 @@ export default class ServicesPage extends React.Component {
                             <p>We'll never share your email with anyone else.</p>
                         </div>
 
-                        <div class="footer-right">
+                        <div className="footer-right">
                             <div>
                                 <h3>New York</h3>
                                 <p>
@@ -81,7 +74,7 @@ export default class ServicesPage extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div class="copyright">
+                    <div className="copyright">
                         <p>Copyright © 2018 Smith and Jones</p>
                     </div>
                 </footer>
