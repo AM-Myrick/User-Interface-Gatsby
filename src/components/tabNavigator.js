@@ -4,17 +4,26 @@ export default class TabNavigator extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            preConstruction: true,
+            preConstruction: false,
             construction: false,
             designBuild: false,
             sustainability: false
         };
       }
 
+      componentDidMount() {
+          this.setState({preConstruction: true})
+      }
+      
+
       selectTab = (e) => {
         e.preventDefault();
-        console.log(e.target);
-        this.setState({ [e.target]: true });
+        console.log(e.target.id);
+        this.setState({preConstruction: false})
+        this.setState({construction: false})
+        this.setState({designBuild: false})
+        this.setState({sustainability: false})
+        this.setState({[e.target.id]: true });
       }
 
       render() {
@@ -23,10 +32,10 @@ export default class TabNavigator extends React.Component {
             <div className="serv-container">
                 <div className="tabs">
                     <div className="tabs-links">
-                        <div className="tabs-link tabs-link-selected" name="preConstruction" onClick={this.selectTab} >Pre-Construction</div>
-                        <div className="tabs-link" name="construction" onClick={this.selectTab}>Construction</div>
-                        <div className="tabs-link" name="designBuild" onClick={this.selectTab}>Design Build</div>
-                        <div className="tabs-link" name="sustainability" onClick={this.selectTab}>Sustainability</div>
+                        <div className="tabs-link tabs-link-selected" id="preConstruction" onClick={this.selectTab} >Pre-Construction</div>
+                        <div className="tabs-link" id="construction" onClick={this.selectTab}>Construction</div>
+                        <div className="tabs-link" id="designBuild" onClick={this.selectTab}>Design Build</div>
+                        <div className="tabs-link" id="sustainability" onClick={this.selectTab}>Sustainability</div>
                     </div>
                 </div>
                 <div className="tabs-items">
@@ -48,10 +57,10 @@ export default class TabNavigator extends React.Component {
             <div className="serv-container">
                 <div className="tabs">
                     <div className="tabs-links">
-                        <div className="tabs-link" name="preConstruction" onClick={this.selectTab}>Pre-Construction</div>
-                        <div className="tabs-link tabs-link-selected" name="construction"  onClick={this.selectTab}>Construction</div>
-                        <div className="tabs-link" name="designBuild" onClick={this.selectTab}>Design Build</div>
-                        <div className="tabs-link" name="sustainability" onClick={this.selectTab}>Sustainability</div>
+                        <div className="tabs-link" id="preConstruction" onClick={this.selectTab}>Pre-Construction</div>
+                        <div className="tabs-link tabs-link-selected" id="construction"  onClick={this.selectTab}>Construction</div>
+                        <div className="tabs-link" id="designBuild" onClick={this.selectTab}>Design Build</div>
+                        <div className="tabs-link" id="sustainability" onClick={this.selectTab}>Sustainability</div>
                     </div>
                 </div>
                 <div className="tabs-items">
@@ -73,10 +82,10 @@ export default class TabNavigator extends React.Component {
             <div className="serv-container">
                 <div className="tabs">
                     <div className="tabs-links">
-                        <div className="tabs-link" name="preConstruction" onClick={this.selectTab}>Pre-Construction</div>
-                        <div className="tabs-link" name="construction"  onClick={this.selectTab}>Construction</div>
-                        <div className="tabs-link tabs-link-selected" name="designBuild" onClick={this.selectTab}>Design Build</div>
-                        <div className="tabs-link" name="sustainability" onClick={this.selectTab}>Sustainability</div>
+                        <div className="tabs-link" id="preConstruction" onClick={this.selectTab}>Pre-Construction</div>
+                        <div className="tabs-link" id="construction"  onClick={this.selectTab}>Construction</div>
+                        <div className="tabs-link tabs-link-selected" id="designBuild" onClick={this.selectTab}>Design Build</div>
+                        <div className="tabs-link" id="sustainability" onClick={this.selectTab}>Sustainability</div>
                     </div>
                 </div>
                 <div className="tabs-items">
@@ -98,10 +107,10 @@ export default class TabNavigator extends React.Component {
             <div className="serv-container">
                 <div className="tabs">
                     <div className="tabs-links">
-                        <div className="tabs-link" name="preConstruction" onClick={this.selectTab}>Pre-Construction</div>
-                        <div className="tabs-link" name="construction"  onClick={this.selectTab}>Construction</div>
-                        <div className="tabs-link" name="designBuild" onClick={this.selectTab}>Design Build</div>
-                        <div className="tabs-link tabs-link-selected" name="sustainability" onClick={this.selectTab}>Sustainability</div>
+                        <div className="tabs-link" id="preConstruction" onClick={this.selectTab}>Pre-Construction</div>
+                        <div className="tabs-link" id="construction"  onClick={this.selectTab}>Construction</div>
+                        <div className="tabs-link" id="designBuild" onClick={this.selectTab}>Design Build</div>
+                        <div className="tabs-link tabs-link-selected" id="sustainability" onClick={this.selectTab}>Sustainability</div>
                     </div>
                 </div>
                 <div className="tabs-items">

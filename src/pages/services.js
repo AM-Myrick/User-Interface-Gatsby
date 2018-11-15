@@ -1,6 +1,8 @@
 import React from 'react'
 import Navigation from "../components/nav";
 import TabNavigator from "../components/tabNavigator"
+import mobileServicesJumbotron from "../img/services/services-jumbo.jpg";
+import servicesJumbotron from "../img/services/services-jumbo1.jpg";
 
 export default class ServicesPage extends React.Component {
     constructor(props) {
@@ -21,8 +23,8 @@ export default class ServicesPage extends React.Component {
                 <Navigation />
 
                 <div class="serv-jumbotron">
-                    <img src="./img/services/services-jumbo1.jpg" alt="services jumbotron" class="desktop" />
-                    <img src="./img/services/services-jumbo.jpg" alt="mobile services jumbotron" class="mobile" />
+                    <img src={servicesJumbotron} alt="services jumbotron" class="desktop" />
+                    <img src={mobileServicesJumbotron} alt="mobile services jumbotron" class="mobile" />
                     <div class="serv-img-text">
                         <h1>Services</h1>
                     </div>
