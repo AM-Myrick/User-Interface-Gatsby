@@ -26,7 +26,6 @@ export default class TabNavigator extends React.Component {
 
       selectTab = (e) => {
         e.preventDefault();
-        console.log(e.target.id);
         this.setState({preConstruction: false})
         this.setState({construction: false})
         this.setState({designBuild: false})
