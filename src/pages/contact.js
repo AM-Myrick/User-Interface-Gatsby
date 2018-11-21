@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Navigation from "../components/nav";
 import contactJumbotron from "../img/contact/contact-jumbo1.jpg"
 import mobileContactJumbotron from "../img/contact/contact-jumbo.jpg"
+import '../components/layout.css'
 
 const ContactPage = () => (
   <div>

@@ -3,6 +3,7 @@ import Navigation from "../components/nav";
 import TabNavigator from "../components/tabNavigator"
 import mobileServicesJumbotron from "../img/services/services-jumbo.jpg";
 import servicesJumbotron from "../img/services/services-jumbo1.jpg";
+import '../components/layout.css'
 
 export default class ServicesPage extends React.Component {
     constructor(props) {
