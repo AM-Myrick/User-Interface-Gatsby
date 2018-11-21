@@ -7,7 +7,7 @@ import designBuildImage from "../img/services/services-tab-design-build-img.png"
 import designBuildMobile from "../img/services/services-tab-mobile-design-build-img.png"
 import sustainabilityImage from "../img/services/services-tab-sustainability-img.png"
 import sustainabilityMobile from "../img/services/services-tab-mobile-sustainability-img.png"
-import '../layout.css'
+import './layout.css'
 
 export default class TabNavigator extends React.Component {
     constructor(props) {
