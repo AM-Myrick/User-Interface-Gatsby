@@ -1,16 +1,16 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Navigation from "../components/nav";
-import contactJumbotron from "../img/contact/contact-jumbo1.jpg"
-import mobileContactJumbotron from "../img/contact/contact-jumbo.jpg"
+import Footer from "../components/footer";
+import Img from 'gatsby-image';
 import '../components/layout.css'
 
-const ContactPage = () => (
+const ContactPage = (props) => (
   <div>
 	  <Navigation />
     <div className="cu-jumbotron">
-      <img src={contactJumbotron} alt="contact jumbotron" className="desktop" />
-      <img src={mobileContactJumbotron} alt="mobile contact jumbotron" className="mobile" />
+      <Img alt="contact jumbotron" fluid={props.data.contactJumbotron.childImageSharp.fluid} className="desktop"/>
+      <Img alt="mobile contact jumbotron" fluid={props.data.mobileContactJumbotron.childImageSharp.fluid} className="mobile" />
       <div className="cu-img-text">
         <h1>Contact Us</h1>
       </div>
@@ -76,54 +76,19 @@ const ContactPage = () => (
       </aside>
     </div>
 
-  <footer>
-    <div className="footer-content">
-      <div className="footer-left">
-        <h2>Interested in starting a project? </h2>
-        <h2>Let’s talk:</h2>
-
-        <input type="text" placeholder="Enter email" />
-
-        <p>We'll never share your email with anyone else.</p>
-      </div>
-
-      <div className="footer-right">
-        <div>
-          <h3>New York</h3>
-          <p>
-            123 Lane<br />
-            Suite 100<br />
-            Albany, NY 12345<br />
-            202 555 0144
-          </p>
-        </div>
-
-        <div>
-          <h3>Florida</h3>
-          <p>
-            Ocean Drive<br />
-            Suite 201<br />
-            Orlando, FL 22345<br />
-            502 555 0144
-          </p>
-        </div>
-
-        <div>
-          <h3>California</h3>
-          <p>
-            Mountain Street<br />
-            Suite 105<br />
-            San Diego, CA 22345<br />
-            702 555 0144
-          </p>
-        </div>
-      </div>
-    </div>
-    <div className="copyright">
-      <p>Copyright © 2018 Smith and Jones</p>
-    </div>
-  </footer>
+  <Footer />
 </div>
 )
 
 export default ContactPage;
+
+export const indexQuery = graphql`
+  query {
+    contactJumbotron: file(relativePath: { eq: "contact/contact-jumbo1.jpg" }) {
+      ...fluidImage
+    }
+    mobileContactJumbotron: file(relativePath: { eq: "contact/contact-jumbo.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;

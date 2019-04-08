@@ -334,6 +334,7 @@ footer .footer-content .footer-right div p {
 }
 .jumbotron {
   max-width: 100%;
+  width: 100%;
   padding-bottom: 50px;
   position: relative;
   display: inline-block;
@@ -462,6 +463,7 @@ footer .footer-content .footer-right div p {
 }
 .container .intro-content-top .top-right {
   max-width: 50%;
+  width: 50%;
 }
 .container .intro-content-top .top-right .desktop {
   max-width: 100%;
@@ -556,6 +558,7 @@ footer .footer-content .footer-right div p {
 }
 .container .intro-content-bottom .bottom-left {
   max-width: 50%;
+  width: 50%;
   order: -1;
 }
 @media (max-width: 768px) {
@@ -873,6 +876,7 @@ footer .footer-content .footer-right div p {
 }
 .serv-jumbotron {
   max-width: 100%;
+  width: 100%;
   padding-bottom: 50px;
   position: relative;
   display: inline-block;
@@ -882,6 +886,7 @@ footer .footer-content .footer-right div p {
 }
 .serv-jumbotron .desktop {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 @media (max-width: 500px) {
@@ -891,6 +896,7 @@ footer .footer-content .footer-right div p {
 }
 .serv-jumbotron .mobile {
   max-width: 100%;
+  width: 100%;
   height: auto;
   display: none;
 }
@@ -1046,6 +1052,7 @@ footer .footer-content .footer-right div p {
 }
 .cu-jumbotron {
   max-width: 100%;
+  width: 100%;
   padding-bottom: 50px;
   position: relative;
   display: inline-block;

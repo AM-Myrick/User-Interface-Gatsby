@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Link } from 'gatsby'
-import hamburger from "../img/nav-hamburger.png"
-import closeHamburger from "../img/nav-hamburger-close.png"
+import hamburger from "../images/nav-hamburger.png"
+import closeHamburger from "../images/nav-hamburger-close.png"
 import './layout.css'
 
 class Navigation extends Component {

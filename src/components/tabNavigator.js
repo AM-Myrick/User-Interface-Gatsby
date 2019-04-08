@@ -1,15 +1,8 @@
-import React from 'react'
-import preConstructionImage from "../img/services/services-tab-pre-construction-img.png"
-import preConstructionMobile from "../img/services/services-tab-mobile-pre-construction-img.png"
-import constructionImage from "../img/services/services-tab-construction-img.png"
-import constructionMobile from "../img/services/services-tab-mobile-construction-img.png"
-import designBuildImage from "../img/services/services-tab-design-build-img.png"
-import designBuildMobile from "../img/services/services-tab-mobile-design-build-img.png"
-import sustainabilityImage from "../img/services/services-tab-sustainability-img.png"
-import sustainabilityMobile from "../img/services/services-tab-mobile-sustainability-img.png"
+import React from 'react';
+import Img from 'gatsby-image';
 import './layout.css'
 
-export default class TabNavigator extends React.Component {
+class TabNavigator extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -19,7 +12,7 @@ export default class TabNavigator extends React.Component {
             sustainability: false
         };
       }
-
+      
       componentDidMount() {
           this.setState({preConstruction: true})
       }
@@ -55,8 +48,8 @@ export default class TabNavigator extends React.Component {
                                     of the art customer service.<br /><br />Phosfluorescently engage worldwide methodologies with web-enabled
                                     technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
                                     Completely pursue scalable customer service through sustainable potentialities.</p>
-                                <img src={preConstructionImage} alt="Pre-Construction" className="desktop" />
-                                <img src={preConstructionMobile} alt="mobile Pre-Construction" className="mobile" />
+                                <Img alt="Pre-Construction" fluid={this.props.props.data.preConstructionImage.childImageSharp.fluid} className="desktop"/>
+                                <Img alt="mobile Pre-Construction" fluid={this.props.props.data.preConstructionMobile.childImageSharp.fluid} className="mobile" />
                         </div>
                     </div>
                 </div>
@@ -80,8 +73,8 @@ export default class TabNavigator extends React.Component {
                                 of the art customer service.<br /><br />Phosfluorescently engage worldwide methodologies with web-enabled
                                 technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
                                 Completely pursue scalable customer service through sustainable potentialities.</p>
-                            <img src={constructionImage} alt="Construction" className="desktop" />
-                            <img src={constructionMobile} alt="mobile Construction" className="mobile" />
+                            <Img alt="Construction" fluid={this.props.props.data.constructionImage.childImageSharp.fluid} className="desktop"/>
+                            <Img alt="mobile Construction" fluid={this.props.props.data.constructionMobile.childImageSharp.fluid} className="mobile" />
                         </div>
                     </div>
                 </div>
@@ -105,8 +98,8 @@ export default class TabNavigator extends React.Component {
                                 of the art customer service.<br /><br />Phosfluorescently engage worldwide methodologies with web-enabled
                                 technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
                                 Completely pursue scalable customer service through sustainable potentialities.</p>
-                            <img src={designBuildImage} alt="Design Build" className="desktop" />
-                            <img src={designBuildMobile} alt="mobile design build" className="mobile" />
+                            <Img alt="Design Build" fluid={this.props.props.data.designBuildImage.childImageSharp.fluid} className="desktop"/>
+                            <Img alt="mobile design build" fluid={this.props.props.data.designBuildMobile.childImageSharp.fluid} className="mobile" />
                         </div>
                     </div>
                 </div>
@@ -130,8 +123,8 @@ export default class TabNavigator extends React.Component {
                                 of the art customer service.<br /><br />Phosfluorescently engage worldwide methodologies with web-enabled
                                 technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking.
                                 Completely pursue scalable customer service through sustainable potentialities.</p>
-                            <img src={sustainabilityImage} alt="Sustainability" className="desktop" />
-                            <img src={sustainabilityMobile} alt="mobile sustainability" className="mobile" />
+                            <Img alt="Sustainability" fluid={this.props.props.data.sustainabilityImage.childImageSharp.fluid} className="desktop"/>
+                            <Img alt="mobile sustainability" fluid={this.props.props.data.sustainabilityMobile.childImageSharp.fluid} className="mobile" />
                         </div>
                     </div>
                 </div>
@@ -139,3 +132,5 @@ export default class TabNavigator extends React.Component {
         )
       }
     }
+
+export default TabNavigator; 
