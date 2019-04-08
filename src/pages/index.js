@@ -153,13 +153,3 @@ export const indexQuery = graphql`
     }
   }
 `;
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
