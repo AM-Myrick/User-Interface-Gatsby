@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby';
+import { Helmet } from "react-helmet";
 import Navigation from "../components/nav";
 import Footer from "../components/footer";
 import Img from 'gatsby-image';
@@ -7,6 +8,11 @@ import '../components/layout.css'
 
 const ContactPage = (props) => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" name="Description" content="Prestigious architecture firm for small and large businesses." />
+      <title>Contact - Smith & Jones Architects</title>
+      <link rel="canonical" href="https://s-j-architects.netlify.com/contact" />
+    </Helmet>
 	  <Navigation />
     <div className="cu-jumbotron">
       <Img alt="contact jumbotron" fluid={props.data.contactJumbotron.childImageSharp.fluid} className="desktop"/>

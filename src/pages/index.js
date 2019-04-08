@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { Helmet } from "react-helmet";
 import Navigation from "../components/nav"
 import Footer from "../components/footer"
 import Img from 'gatsby-image'
@@ -8,6 +9,11 @@ import '../components/layout.css'
 const IndexPage = (props) => {
   return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" name="Description" content="Prestigious architecture firm for small and large businesses." />
+          <title>Home - Smith & Jones Architects</title>
+          <link rel="canonical" href="https://s-j-architects.netlify.com/" />
+        </Helmet>
         <Navigation/>
         <div className="jumbotron">
           <Img alt="incredible building" fluid={props.data.jumbotron.childImageSharp.fluid} className="desktop"/>
@@ -144,6 +150,16 @@ export const indexQuery = graphql`
     }
     mobileBlocks: file(relativePath: { eq: "home/home-mobile-the-blocks-img.png" }) {
       ...fluidImage
+    }
+  }
+`;
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
     }
   }
 `;

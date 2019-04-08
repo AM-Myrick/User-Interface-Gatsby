@@ -1,6 +1,8 @@
 import React from 'react';
 import { fluidImage } from "./index";
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
+import { Helmet } from "react-helmet";
 import Navigation from "../components/nav";
 import Footer from "../components/footer";
 import TabNavigator from "../components/tabNavigator"
@@ -9,6 +11,11 @@ import '../components/layout.css'
 const ServicesPage = (props) => {
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" name="Description" content="Prestigious architecture firm for small and large businesses." />
+                <title>Services - Smith & Jones Architects</title>
+                <link rel="canonical" href="https://s-j-architects.netlify.com/services" />
+            </Helmet>
             <Navigation />
 
             <div className="serv-jumbotron">

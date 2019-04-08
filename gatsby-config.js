@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: `Smith & Jones Architects`,
+    siteUrl: `https://s-j-architects.netlify.com/`,
+    description: `Prestigious architecture firm for small and large businesses.`,
   },
   plugins: [
     {
